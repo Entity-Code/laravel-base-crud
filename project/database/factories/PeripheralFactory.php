@@ -10,7 +10,7 @@ $factory->define(Peripheral::class, function (Faker $faker) {
     return [
         'name'          => $faker -> word(),
         'model'         => $faker -> ean8(),
-        'price'         =>           rand(2500, 25000)/100,
-        'expenditure'   =>           rand(3000, 10000)/100
-    ];
+        'price'         => $faker -> randomFloat($nbMaxDecimals = 2, $min = 25, $max = 250),
+        'expenditure'   => $faker -> randomFloat($nbMaxDecimals = 2, $min = 5, $max = 50)
+    ]; 
 });

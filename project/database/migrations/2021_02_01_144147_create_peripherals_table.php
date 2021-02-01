@@ -18,8 +18,8 @@ class CreatePeripheralsTable extends Migration
             
             $table -> string('name', 50);
             $table -> string('model', 100) -> unique();
-            $table -> smallInteger('price');
-            $table -> integer('expenditure');
+            $table -> float('price');
+            $table -> float('expenditure');
 
             $table -> timestamps();
         });

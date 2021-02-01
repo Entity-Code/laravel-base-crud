@@ -23,10 +23,18 @@ class PeripheralController extends Controller
     }
     public function store(Request $request) {
         //dd($request -> all());
-
         
-
         Peripheral::create($request -> all());
+        /*
+        $inputPrice = new Peripheral;
+        $inputPrice -> price = $request -> get('price');
+        $inputLen = strlen((string)$inputPrice);
+        $floatInput = null;
+        if ($inputLen <= 3 ) {
+            $floatInput = $inputPrice * 100;
+        }
+        */
         return redirect() -> route('peripheral-index');
+        
     }
 }  

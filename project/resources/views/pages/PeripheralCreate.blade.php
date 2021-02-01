@@ -18,6 +18,7 @@
         <br>
 
         <label for="price">Price (€):</label>
+        
         <input name="price" type="text">
 
         <br>
