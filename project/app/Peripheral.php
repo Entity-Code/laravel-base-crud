@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Peripheral extends Model
 {
-    //
+    protected $guarded = [];
 }

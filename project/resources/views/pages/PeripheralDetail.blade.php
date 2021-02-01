@@ -3,8 +3,12 @@
 
 @section('content') 
 
-
-    <h1>Hello Im PeripheralHome's details!</h1>
+    <h2><li>Peripheral number {{$peripheral -> id}}</li></h2>
+    <ul>       
+        <li>Model: {{$peripheral -> model}}</li>
+        <li>Price: {{$peripheral -> price}} €</li>
+        <li>Expenditure: {{$peripheral -> expenditure}} W</li>
+    </ul>
 
     
 @endsection 
